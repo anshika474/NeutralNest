@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeutralNest -All About Carbon Credit </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Neutral<span>Nest</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn-primary">Sign In</button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Offset Your Carbon Footprint</h1>
+                <p>Invest in verified carbon credit projects and make a real impact on climate change.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Browse Projects</button>
+                    <button class="btn-secondary">Calculate Footprint</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Forest landscape">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <p>Verified by:</p>
+            <div class="badges">
+                <img src="https://via.placeholder.com/100x50?text=Verra" alt="Verra">
+                <img src="https://via.placeholder.com/100x50?text=GoldStandard" alt="Gold Standard">
+                <img src="https://via.placeholder.com/100x50?text=CCB" alt="Climate Community Biodiversity">
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Preview -->
+    <section id="marketplace" class="marketplace-preview">
+        <div class="container">
+            <h2>Featured Carbon Projects</h2>
+            <p>Browse our verified carbon offset projects from around the world</p>
+            
+            <div class="filter-bar">
+                <select id="project-type">
+                    <option value="all">All Project Types</option>
+                    <option value="reforestation">Reforestation</option>
+                    <option value="renewable">Renewable Energy</option>
+                    <option value="cookstoves">Clean Cookstoves</option>
+                </select>
+                <select id="location">
+                    <option value="all">All Locations</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="americas">Americas</option>
+                </select>
+                <button class="btn-filter">Filter</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically inserted here by JavaScript -->
+            </div>
+            
+            <button class="btn-primary view-all">View All Projects</button>
+        </div>
+    </section>
+
+    <!-- Carbon Calculator -->
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2>Carbon Footprint Calculator</h2>
+            <p>Calculate your annual carbon emissions and discover how to offset them</p>
+            
+            <div class="calculator-container">
+                <div class="calculator-steps">
+                    <div class="step active" data-step="1">
+                        <span>1</span>
+                        <p>Home Energy</p>
+                    </div>
+                    <div class="step" data-step="2">
+                        <span>2</span>
+                        <p>Transportation</p>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span>3</span>
+                        <p>Lifestyle</p>
+                    </div>
+                    <div class="step" data-step="4">
+                        <span>4</span>
+                        <p>Results</p>
+                    </div>
+                </div>
+                
+                <div class="calculator-form">
+                    <div class="form-step step-1 active">
+                        <h3>Your Home Energy Usage</h3>
+                        <div class="form-group">
+                            <label for="electricity">Monthly Electricity (kWh)</label>
+                            <input type="number" id="electricity" placeholder="e.g. 450">
+                        </div>
+                        <div class="form-group">
+                            <label for="heating">Heating Type</label>
+                            <select id="heating">
+                                <option value="natural_gas">Natural Gas</option>
+                                <option value="electric">Electric</option>
+                                <option value="oil">Heating Oil</option>
+                                <option value="none">None</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="heating-amount">Monthly Heating Usage</label>
+                            <input type="number" id="heating-amount" placeholder="e.g. 20 (therms or kWh)">
+                        </div>
+                        <button class="btn-primary next-step">Next: Transportation</button>
+                    </div>
+                    
+                    <div class="form-step step-2">
+                        <!-- Transportation step content -->
+                    </div>
+                    
+                    <div class="form-step step-3">
+                        <!-- Lifestyle step content -->
+                    </div>
+                    
+                    <div class="form-step step-4">
+                        <!-- Results step content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Visualization -->
+    <section class="impact">
+        <div class="container">
+            <h2>Your Impact Matters</h2>
+            <div class="impact-stats">
+                <div class="stat">
+                    <h3 data-count="12500">0</h3>
+                    <p>Tons of CO₂ Offset</p>
+                </div>
+                <div class="stat">
+                    <h3 data-count="42">0</h3>
+                    <p>Projects Funded</p>
+                </div>
+                <div class="stat">
+                    <h3 data-count="8500">0</h3>
+                    <p>Acres Protected</p>
+                </div>
+                <div class="stat">
+                    <h3 data-count="1500">0</h3>
+                    <p>Families Benefited</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated on Carbon Markets</h2>
+            <p>Subscribe to our newsletter for the latest in sustainability and carbon offsetting</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">Eco<span>Cred</span></div>
+                    <p>Making carbon offsetting simple, transparent, and impactful.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Marketplace</h4>
+                    <ul>
+                        <li><a href="#">All Projects</a></li>
+                        <li><a href="#">Reforestation</a></li>
+                        <li><a href="#">Renewable Energy</a></li>
+                        <li><a href="#">Community Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Carbon Credits Guide</a></li>
+                        <li><a href="#">Sustainability Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoCred. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
